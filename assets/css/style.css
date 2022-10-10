@@ -7,7 +7,6 @@
 }
 
 body{
-    /* background-color: #EC4E47; */
     background-image: url("../img/122-1222236_orange-gradient-wallpaper-4k.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -25,48 +24,66 @@ body{
 
 /* ---------------COMPONENTS--------------- */
 .container{
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     color: white;
 }
 
-.text{
-    margin: 100px 0 20px;
-}
-
-.text h1{
-    font-size: 4rem;
-}
-
 .card{
-    padding: 20px;
-    margin: 20px;
+    padding: 25px;
     background: rgba(255, 255, 255, 0.31);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.3px);
-    -webkit-backdrop-filter: blur(2.3px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.color-output{
+    color: #4132c6b4;
 }
 
 /* -----------------HEADER----------------- */
 /* no content */
 
 /* ------------------MAIN------------------ */
+.text{
+    position: absolute;
+    top: 100px;
+}
+
+.text h1{
+    font-size: 4rem;
+}
+
 .card ul{
     list-style: none;
 }
 
 .card ul li{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-bottom: 10px;
 }
 
 .card ul li:last-child{
-    font-size: 2rem;
-    padding-top: 20px;
+    font-size: 1.7rem;
+    padding-top: 40px;
     padding-bottom: 0;
+}
+
+.autor{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.autor a{
+    text-decoration: none;
+    color: white;
 }
 
 /* -----------------FOOTER----------------- */

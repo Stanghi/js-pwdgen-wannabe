@@ -3,7 +3,11 @@ const surnameUtent = prompt('Inserisci il tuo cognome');
 const favColorUtent = prompt('Inserisci il tuo colore preferito');
 let output;
 
-output = `${nameUtent}${surnameUtent}${favColorUtent}`
+output = `
+<strong class="color-output">
+${nameUtent}${surnameUtent}${favColorUtent}22
+</strong>
+`
 console.log(output);
 
 document.getElementById('nameUtent').innerHTML += nameUtent;
